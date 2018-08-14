@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<!-- if statement in jinja -->
 	{% if title %}
 	<title>>My Blog - {{title}}</title>
 	{% else %}
@@ -9,6 +10,8 @@
 	{% endif %}
 </head>
 <body>
+
+
 	<header>
 	<!-- Navbar -->
 	<nav>
@@ -28,8 +31,28 @@
 				<a href="/register">Register</a>
 			</div>
 		</div>
-	</nav></header>
-	{% block content %}{% endblock %}
+	</nav>
+	</header>		
+
+	<main>	
+			<div>
+			<div class="container">
+			{% block content %}{% endblock %}
+			</div>
+			<div>
+				<h3>My Sidebar</h3>
+				<p>You can put any information here you'd like.
+					<ul>
+						<li>Latest Posts</li>
+						<li>Announcements</li>
+						<li>Calendars</li>
+						<li>etc</li>
+					</ul>
+				</p>
+
+			</div>
+		</div>
+	</main>
 	
 </body>
 </html>

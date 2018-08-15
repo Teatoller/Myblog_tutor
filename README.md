@@ -8,3 +8,5 @@ The app should enable user:
 - read other user posts and leave a comment
 - reset password
 - Register on the blog as a first timer. 
+
+Adopted from: Corey M Schaffer, Flask series Tutorial 

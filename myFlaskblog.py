@@ -47,6 +47,12 @@ posts = [
         'title': 'Blog Post 2',
         'content': 'Second post content',
         'date_posted': 'August 14, 2018'
+    },
+    {
+        'author': 'Aisha Amina',
+        'title': 'Blog Post 3',
+        'content': 'Third post content',
+        'date_posted': 'August 26, 2018'
     }
 ]
 
@@ -76,7 +82,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         if form.email.data == 'admin@blog.com' and form.password.data == 'password':
-            flash('You have been looged in!', 'success')
+            flash('You have been logged in!', 'success')
             return redirect(url_for('home'))
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')

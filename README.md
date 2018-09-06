@@ -9,4 +9,6 @@ The app should enable user:
 - reset password
 - Register on the blog as a first timer. 
 
+[![Build Status](https://travis-ci.org/Teatoller/Myblog_tutor.svg?branch=master)](https://travis-ci.org/Teatoller/Myblog_tutor)
+
 Adopted from: Corey M Schaffer, Flask series Tutorial 
